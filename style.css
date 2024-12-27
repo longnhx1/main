@@ -1,0 +1,90 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff6ef;
+}
+
+.img-size {
+    width: 350px;
+    height: 220px;
+    /* object-fit: cover; */
+}
+
+.khoang-trang-img{
+    margin: 5px;
+}
+
+.crop {
+    width: 340px;
+    height: 460px;
+    object-fit: cover;
+}
+
+.li-style {
+    list-style: none;
+}
+
+.size-content {
+    font-size: 50px;
+}
+
+.khoangCach {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.khoangCachContent {
+    margin-bottom: 100px;
+}
+
+.style-content {
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal ;
+    color: #4e4d4d;
+}
+
+.font-h1 {
+    font-size: 50px;
+}
+
+#header {
+
+}
+
+.center {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    height: 100vh; /* Chiều cao của phần tử cha */
+}
+
+
+#header .center > li > ul h1 {
+    font-size: 100px;
+}
+
+#header .center .anhHeader > img {
+
+    width: auto;
+    height: 500px;
+    margin-left: 100px;
+}
+
+#content {
+
+}
+
+#sothich {
+
+}
+
+#sothich .sothich2 {
+    
+}
+
+
+
