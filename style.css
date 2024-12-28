@@ -7,6 +7,15 @@
     background-color: #fff6ef;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal ;
+    color: #4e4d4d;
+}
+
+
 .img-size {
     width: 350px;
     height: 220px;
@@ -30,6 +39,7 @@
 .size-content {
     font-size: 50px;
 }
+
 
 .khoangCach {
     margin-left: 150px;
@@ -58,7 +68,7 @@
     list-style: none;
     display: flex;
     align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center; /* Căn giữa theo chiều ngang */
+    justify-content: space-around; /* Căn giữa theo chiều ngang */
     height: 100vh; /* Chiều cao của phần tử cha */
 }
 
@@ -67,12 +77,11 @@
     font-size: 100px;
 }
 
-#header .center .anhHeader > img {
-
+.anhHeader{
     width: auto;
     height: 500px;
-    margin-left: 100px;
 }
+
 
 #content {
 
@@ -86,5 +95,10 @@
     
 }
 
+
+
+.content-muctieu {
+    inline-size: 400px;
+}
 
 
