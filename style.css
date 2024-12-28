@@ -14,15 +14,32 @@ a {
     color: #4e4d4d;
 }
 
+:root {
+
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+img {
+    display: block; /* Loại bỏ khoảng trắng xung quanh ảnh */
+    margin: 0 auto; /* Căn giữa ảnh (tùy chọn) */
+}
+
+.khoi-tt {
+    inline-size: 400px;
+}
+
+.sub-text {
+    margin-top: 30px;
+    font-size: 19px;
 }
 
 .list-menu {
     display: flex;
     justify-content: center;
     list-style: none;
-    margin-top: 20px;
 }
 
 .list-menu li { 
@@ -58,6 +75,10 @@ html {
     margin: 5px;
 }
 
+.img-radius {
+    border-radius: 10px;
+}
+
 .crop {
     width: 340px;
     height: 460px;
@@ -68,19 +89,51 @@ html {
     list-style: none;
 }
 
+#header .main-ul >li > ul > li {
+    inline-size: 500px;
+}
+
+
 .size-content {
     font-size: 50px;
 }
 
 
-.khoangCach {
-    margin-left: 150px;
-    margin-right: 150px;
+.sothich-lorem {
+    inline-size: 250px;
 }
 
-.khoangCachContent {
-    margin-bottom: 100px;
+.img-sothich {
+    justify-content: center;
+    display: flex;
 }
+
+.main-ul .main-item {
+    margin-right: 5px;
+}
+
+.sub-text{
+    inline-size: 300px;
+}
+
+#sothich {
+    display: inline-block;
+    width: 100%;
+}
+
+#sothich .khoi-tt {
+    inline-size: 203px;
+} 
+
+.sub-ul {
+    list-style: none;
+    
+}
+
+.sub-ul .sub-item-2 {
+    margin-bottom: 10px;
+}
+
 
 .style-content {
     font-family:'Times New Roman', Times, serif;
@@ -89,7 +142,7 @@ html {
 }
 
 .font-h1 {
-    font-size: 50px;
+    font-size: 85px;
 }
 
 #header {
@@ -101,12 +154,7 @@ html {
     display: flex;
     align-items: center; /* Căn giữa theo chiều dọc */
     justify-content: space-around; /* Căn giữa theo chiều ngang */
-    height: 100vh; /* Chiều cao của phần tử cha */
-}
-
-
-#header .center > li > ul h1 {
-    font-size: 100px;
+    height: 90vh; /* Chiều cao của phần tử cha */
 }
 
 .anhHeader{
@@ -114,23 +162,157 @@ html {
     height: 500px;
 }
 
+#gioithieu .khoi-tt {
+    inline-size: 500px;
+}   
 
-#content {
-
+#gioithieu .khoi-tt .sub-text {
+    inline-size: auto;
 }
 
-#sothich {
-
+#muctieu .khoi-tt .sub-text {
+    inline-size: 500px;
 }
-
-#sothich .sothich2 {
-    
-}
-
-
 
 .content-muctieu {
     inline-size: 400px;
 }
 
+#lienhe .khoi-tt {
+    inline-size: 500px;
+} 
+
+#lienhe .khoi-tt .sub-text {
+    inline-size: auto;
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+
+    .list-menu li {
+        padding: 0;
+    } 
+    /* Áp dụng CSS cho máy tính bảng (dọc hoặc ngang) */
+    .khoangCach {
+        margin: 0;
+    }
+
+    .main-item .sub-item-1 {
+        display: none;
+    }
+
+    .style-content {
+        inline-size:300px;
+    }
+    .anhHeader {
+        display: none;
+    }
+
+    .khoi-tt .sub-text {
+        inline-size: auto; 
+    }
+
+    .khoi-tt .sub-ul {
+        inline-size: auto;
+    }
+
+    #gioithieu .khoi-tt {
+        padding-left: 10px;
+        padding-right: 10px;
+        inline-size: auto;
+    }
+
+    #muctieu img {
+        display: none;
+    }
+
+    #muctieu .khoi-tt {
+        inline-size: auto;
+    }       
+
+    .mani-ul .main-item {
+        padding: 0 10px 0 10px;
+    }
+
+    #gioigthieu .main-item {
+        padding: 0 10px 0 10px;
+    }
+
+    #lienhe img {
+        border-radius: 50%;
+        padding: 0 10px 0 10px
+    }
+
+    #lienhe .khoi-tt {
+        inline-size: auto;
+    }
+
+    #lienhe .khoi-tt {
+        padding-left: 10px;
+        padding-right: 10px;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    /* �p dụng CSS cho máy tính điện thoại */
+    .list-menu {
+        display: none;
+    }
+
+    .anhHeader {
+        display: none;
+    }
+
+    .sub-item-1 {
+        display: none;
+    }
+
+    #sothich .khoi-tt {
+        padding: 0 20px 0 20px;
+        inline-size: auto;
+    }
+
+    #sothich img {
+        background-size: auto;
+    }
+
+    #sothich .sub-ul {
+        display: flex;
+    }
+
+    #sothich .sub-item-2 {
+        inline-size: auto;
+    }
+
+    #sothich .sub-item-3 {
+        inline-size: auto;
+    }
+
+    #sothich .center {
+        display: block;
+    }
+
+    #muctieu img {
+        display: none;
+    }
+
+    #lienhe .khoi-tt {
+        padding: 0 20px 0 20px;
+        inline-size: auto;
+
+    }
+    #lienhe .center {
+        display: block;
+    }
+
+
+    
+    #lienhe .crop {
+        width: 100%;
+        height: 100%;
+
+    }
+}
 
