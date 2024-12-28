@@ -17,6 +17,7 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
 .list-menu {
     display: flex;
     justify-content: center;
@@ -32,8 +33,18 @@ html {
     border-radius: 5px;
 }
 
-.list-menu li:hover {
-    background-color:#ffd2af;
+.list-menu li a {
+    display: block; /* Đảm bảo liên kết chiếm toàn bộ vùng của `li` */
+    padding: 10px 20px;
+    text-align: center;
+    color: #4e4d4d; /* Giữ màu chữ như ban đầu */
+    text-decoration: none; /* Loại bỏ gạch dưới */
+    border-radius: 5px; /* Thêm hiệu ứng bo góc nếu cần */
+    transition: 0.3s; /* Thêm hiệu ứng chuyển đổi */
+}
+
+.list-menu li:hover a {
+    background-color: #ffd2af;
     color: #000;
 }
 
